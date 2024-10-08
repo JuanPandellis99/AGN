@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 }
 
-body{
+body {
     background-color: black;
     height: 100vh;
 }
@@ -16,11 +16,11 @@ body{
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -31,23 +31,23 @@ body{
     transition: .2s;
 }
 
-h2.title{
+h2.title {
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-h2.title span{
+h2.title span {
     color: #ff914d;
 }
 
 /* CABEÇALHO */
 
-header{
-    padding:40px 4%;
+header {
+    padding: 40px 4%;
 }
 
-header > .interface {
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,82 +60,82 @@ header a {
     transition: .2s;
 }
 
-header a:hover {
+header nav.menu-desk a:hover {
     color: #ffff;
     transform: scale(1.08);
-    
+
 }
 
 
-header nav ul{
+header nav ul {
     list-style: none;
 }
 
-header nav ul li{
+header nav.menu-desk ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
 
 
-button:hover{
+button:hover {
     box-shadow: 0px 0px 8px #fc853bec;
     transform: scale(1.08);
 }
 
 /* estilo top site */
 
-section.topo-do-site{
+section.topo-do-site {
     padding: 40px 4%;
 }
 
-section.topo-do-site .flex{
+section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site h1{
+.topo-do-site h1 {
     color: #ffff;
     font-size: 48px;
 }
 
-.topo-do-site .txt-topo-site h1 span{
-    color:#fc853bec;
+.topo-do-site .txt-topo-site h1 span {
+    color: #fc853bec;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: #ffff;
     margin: 40px 0;
 }
 
 
-.topo-do-site .img-topo-site{
+.topo-do-site .img-topo-site {
     position: relative;
     animation: flutuante 2s ease-in-out infinite alternate;
 }
 
 
-@keyframes flutuante{
-    0%{
+@keyframes flutuante {
+    0% {
         top: 0;
     }
 
-    100%{
+    100% {
         top: 30px;
     }
 }
 
 /*Especialidades */
-section.especialidades{
+section.especialidades {
     padding: 40px 4%;
 }
 
-section.especialidades .flex{
-    gap: 60px  ;
+section.especialidades .flex {
+    gap: 60px;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
     margin-top: 45px;
@@ -143,58 +143,58 @@ section.especialidades .flex{
     transition: .2s;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover {
     transform: scale(1.08);
     box-shadow: 0 0 8px #ffffff75;
 }
 
 
-.especialidades .especialidades-box i{
+.especialidades .especialidades-box i {
     font-size: 75px;
     color: #ff914d;
 }
 
-.especialidades .especialidades-box h3{
+.especialidades .especialidades-box h3 {
     font-size: 30px;
     margin: 15px 0;
 }
 
 /*ABA SOBRE MIM*/
 
-section.sobre-mim{
+section.sobre-mim {
     padding: 80px 4%;
 }
 
-section.sobre-mim .img-sobre img{
+section.sobre-mim .img-sobre img {
     border-radius: 10px;
 }
 
-section.sobre-mim .flex{
+section.sobre-mim .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre-mim .txt-sobre{
+.sobre-mim .txt-sobre {
     color: #fff;
 }
 
-.sobre-mim .txt-sobre h2{
+.sobre-mim .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre-mim .txt-sobre h2 span{
+.sobre-mim .txt-sobre h2 span {
     color: #ff914d;
     display: block;
 }
 
-.sobre-mim .txt-sobre p{
+.sobre-mim .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
 
-.sobre-mim .txt-sobre .btn-social button{
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -204,4 +204,320 @@ section.sobre-mim .flex{
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
+}
+
+/*ABA DE PROJETOS*/
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1c;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #ff914d;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a6;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* FORMS */
+section.forms {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #27272791;
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+form textarea {
+    resize: none;
+    max-height: 300px;
+    padding-bottom: 100px;
+}
+
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input {
+
+    width: 120px;
+    background-color: #ff914d;
+    color: #000000;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #fc853bec;
+    transform: scale(1.08);
+
+}
+
+/*rodape*/
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1c;
+
+}
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+footer .linha-secundaria {
+    padding: 20px 0%;
+}
+
+.borda {
+    border-top: 2px solid #ff914d;
+}
+
+footer .linha-secundaria p i {
+    color: #ff914d;
+    font-size: 22px;
+}
+
+footer .linha-secundaria p a {
+    color: #fff;
+
+}
+
+
+@media screen and (max-width:1020px) {
+
+    /*header*/
+    .menu-desk,
+    .btn-contato {
+        display: none;
+    }
+
+    /*header*/
+
+    /*geral*/
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.title {
+        font-size: 34px;
+        line-height: 30px;
+        text-align: center;
+    }
+    /*geral*/
+
+    /*topo*/
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 34px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /*topo*/
+
+    /*Especialidades */
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    /*Especialidades */
+
+    /*sobre*/
+    section.sobre-mim {
+        padding: 80px 8%;
+    }
+
+    .sobre-mim .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /*sobre*/
+
+    /*portfolio*/
+    section.portfolio {
+        padding: 80px 8%;
+   
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+       gap: 60px;
+    
+    }
+    /*portfolio*/
+
+    /*footer*/
+    footer .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .linha-primaria {
+        text-align: center;
+    }
+/*footer*/
+
+}
+
+
+
+.btn-abrir-menu{
+    display: none;
+}
+
+
+/*MENU DE INTERAÇÃO MOBILE*/
+
+.btn-open i{
+    color: #ff914d;
+    font-size: 43px;
+}
+
+
+
+
+.mobile{
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.mobile.abrir-menu{
+    width: 70%;
+
+}
+
+.mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+
+}
+
+.mobile .btn-fechar{
+    padding: 20px 8%;
+}
+
+.mobile .btn-fechar i{
+color: #ff914d;
+font-size: 30px;
+}
+
+.mobile nav ul{
+    text-align: right;
+}
+
+.mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: block;
+
+
+}
+
+.mobile nav ul li a:hover{
+    background-color: #ff914d;
+    color: #000000;
+}
+
+.overlay-menu{
+    background-color: #000000a6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
 }
